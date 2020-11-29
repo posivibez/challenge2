@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: #ecf2f8;
+  font-size: 1.3rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: rgba(255, 255, 255, 0.4); }
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.testimonials {
+  height: 60%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  grid-template-rows: repeat(2, max-content);
+  grid-gap: 2rem; }
+  .testimonials__box {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 3rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-gap: 1rem; }
+    .testimonials__box--daniel {
+      background-color: #7541c8;
+      grid-column: 1 / 3; }
+    .testimonials__box--jonathan {
+      background-color: #48556a;
+      grid-column: 3 / 4; }
+    .testimonials__box--jeanette {
+      background-color: white;
+      grid-column: 1 / 2; }
+    .testimonials__box--patrick {
+      background-color: #19212e;
+      grid-column: 2 / 4; }
+    .testimonials__box--kira {
+      background-color: white;
+      grid-row: 1 / -1;
+      grid-column: 4 / 5; }
+  .testimonials__profile {
+    display: flex;
+    align-items: center; }
+    .testimonials__profile img {
+      width: 3rem;
+      border-radius: 50%;
+      border: 2px solid rgba(207, 207, 207, 0.4); }
+    .testimonials__profile--box {
+      margin-left: 1.5rem; }
+    .testimonials__profile--name {
+      font-weight: 500;
+      color: #cfcfcf;
+      font-size: 1.2rem; }
+      .testimonials__profile--name--dark {
+        color: #48556a; }
+    .testimonials__profile--title {
+      color: rgba(207, 207, 207, 0.5);
+      font-size: 1.1rem; }
+      .testimonials__profile--title--dark {
+        color: rgba(72, 85, 106, 0.5); }
+  .testimonials__heading {
+    color: white;
+    font-weight: 500; }
+    .testimonials__heading--dark {
+      color: #48556a; }
+  .testimonials__text--dark {
+    color: rgba(25, 33, 46, 0.5); }

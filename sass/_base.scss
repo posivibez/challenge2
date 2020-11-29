@@ -1,0 +1,54 @@
+// COLOR VARIABLES
+$color-purple: hsl(263, 55%, 52%);
+$color-greyblue: hsl(217, 19%, 35%);
+$color-darkblue: hsl(219, 29%, 14%);
+$color-white: hsl(0, 0%, 100%);
+$color-lightgrey: hsl(0, 0%, 81%);
+$color-lightgreyblue: hsl(210, 46%, 95%);
+
+// FONT VARIABLES
+$font-primary: 'Kumbh Sans', sans-serif;
+
+//RESPONSIVE VARIABLES
+$bp-desktop: 90em; //1440px
+$bp-mobile: 25em; //375px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    // @media only screen and (max-width: $bp-largest) {
+    //     font-size: 50%;
+    // }
+
+    @media only screen and (max-width: $bp-mobile) {
+        font-size: 50%;
+
+    }
+
+}
+
+body {
+    background-color: $color-lightgreyblue;
+    font-size: 1.3rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: rgba($color-white, 0.4);
+}
+
+.container {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
