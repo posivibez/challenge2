@@ -8,8 +8,17 @@
     grid-template-rows: repeat(2, max-content);
     grid-gap: 2rem;
 
+    @media only screen and (max-width: $bp-mobile) {
+        height: 100%;
+        width: 80%;
+        padding: 5rem 0;
 
-    &__box{
+        grid-template-columns: minmax(min-content, 1fr);
+        grid-template-rows: repeat(5, max-content);
+    }
+
+
+    &__box {
 
         border-radius: 10px;
         overflow: hidden;
@@ -25,12 +34,12 @@
 
         }
 
-        &--jonathan{
+        &--jonathan {
             background-color: $color-greyblue;
             grid-column: 3 / 4;
         }
 
-        &--jeanette{
+        &--jeanette {
             background-color: $color-white;
             grid-column: 1 / 2;
         }
@@ -45,10 +54,18 @@
             grid-row: 1 / -1;
             grid-column: 4 / 5;
         }
-        
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-column: 1 / -1;
+
+            &--kira {
+                grid-row: 5 / -1;
+            }
+        }
+
     }
 
-    &__profile{
+    &__profile {
         display: flex;
         align-items: center;
 
@@ -60,10 +77,10 @@
 
         &--box {
             margin-left: 1.5rem;
-            
+            line-height: 1.3;
         }
-        
-        &--name{
+
+        &--name {
             font-weight: 500;
             color: $color-lightgrey;
             font-size: 1.2rem;
@@ -73,7 +90,7 @@
             }
         }
 
-        &--title{
+        &--title {
             color: rgba($color-lightgrey, 0.5);
             font-size: 1.1rem;
 
@@ -82,8 +99,8 @@
             }
         }
     }
-    
-    &__heading{
+
+    &__heading {
         color: $color-white;
         font-weight: 500;
 
@@ -92,10 +109,10 @@
         }
     }
 
-    &__text{
+    &__text {
         &--dark {
             color: rgba($color-darkblue, 0.5);
         }
     }
-    
+
 }
